@@ -11,7 +11,7 @@ def specified_number(digits):
 
 @app.route("/")
 def default():
-    url = "http://numbersapi.com/"
+    url = "http://numbersapi.com/random"
     response = requests.get(url)
     return response.text
 
