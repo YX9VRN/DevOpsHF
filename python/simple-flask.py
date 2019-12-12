@@ -8,11 +8,12 @@ def specified_number(digits):
     url = "http://numbersapi.com/"+digits
     response = requests.get(url)
     return response.text
-@app.route("/xd", methods = ["GET"])
-def random_number():
-    url = "http://numbersapi.com/random"
+
+@app.route("/")
+def default():
+    url = "http://numbersapi.com/"
     response = requests.get(url)
-    return response.txt
+    return response.text
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
