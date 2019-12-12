@@ -8,7 +8,7 @@ def specified_number(digits):
     url = "http://numbersapi.com/"+digits
     response = requests.get(url)
     return response.text
-@app.route("/xd")
+@app.route("/xd", methods = ["GET"])
 def random_number():
     url = "http://numbersapi.com/random"
     response = requests.get(url)
