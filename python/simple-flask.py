@@ -11,9 +11,9 @@ def specified_number(digits):
 
 @app.route("/")
 def default():
-    url = "http://numbersapi.com/random"
-    response = requests.get(url)
-    return response.text
+	url = "https://numbersapi.com/random"
+	response = requests.get(url)
+	return response.text
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
