@@ -9,7 +9,7 @@ def specified_number(digits):
     response = requests.get(url)
     return response.text
 
-@app.route("/")
+@app.route("/epsteindidntkillhimself", methods = ["GET"])
 def default():
 	url = "https://numbersapi.com/random"
 	response = requests.get(url)
